@@ -35,10 +35,12 @@ namespace BusBookingModels
                 {
                     isthere = true;        
                 }
-                else
-                {
-                    throw new LocationNotFoundException("Location Invalid.. You cannot board from this point");
-                }
+                
+            }
+
+            if (!isthere)
+            {
+                throw new LocationNotFoundException("Location Invalid.. You cannot board from this point");
             }
             return isthere ;
 
