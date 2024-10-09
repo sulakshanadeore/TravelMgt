@@ -1,4 +1,5 @@
 ﻿using BusBookingModels;
+using ExceptionLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,20 @@ namespace BusBookingDAO
 {
     public class Booking : IBookingService
     {
+        
         public bool Book(PassengerBooking bookingReq)
         {
-          
-          //Code for accessing the database, or inputting any records to database
-          //All database logic here
-          //Access the number of seats available from the database for the said from and to locations
-          //if availabe---book
-          //if not availble-----no booking done
+
+            //Code for accessing the database, or inputting any records to database
+            //All database logic here
+            //Access the number of seats available from the database for the said from and to locations
+            //if availabe---book
+            int bookingAvailable = 0;
+
+            if (bookingAvailable == 0)
+            {
+                throw new BusFullException("No tickets available for the date");
+            }
             return false;
         }
     }

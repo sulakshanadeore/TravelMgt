@@ -7,6 +7,7 @@ internal class Program
     {
         Console.WriteLine("Enter courier ID");
         Courier courier = new Courier();
+        
         try
         {
             courier.CourierID = Convert.ToInt32(Console.ReadLine());
@@ -48,7 +49,22 @@ internal class Program
         //}
         catch (LocationNotFoundException ex)
         {
-            Console.WriteLine(ex.Message);
+            FileStream fs=new FileStream("Logger.txt",FileMode.CreateNew,FileAccess.Write);
+            StreamWriter sw=new StreamWriter(fs);
+        
+            
+            sw.WriteLine(ex.Message);
+            sw.WriteLine("Source=" + ex.Source);
+            sw.WriteLine(ex.StackTrace);
+            sw.Close();
+            fs.Close();
+            sw.Dispose();
+            fs.Dispose();
+
+
+           
+
+
 
         }
         catch (Exception ex)

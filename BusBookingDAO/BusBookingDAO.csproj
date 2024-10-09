@@ -10,6 +10,9 @@
     <Reference Include="BusBookingModels">
       <HintPath>..\BusBookingModels\bin\Debug\net6.0\BusBookingModels.dll</HintPath>
     </Reference>
+    <Reference Include="ExceptionLibrary">
+      <HintPath>..\ExceptionLibrary\bin\Debug\net6.0\ExceptionLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

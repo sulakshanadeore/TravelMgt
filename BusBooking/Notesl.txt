@@ -44,9 +44,20 @@ edit---edit existing file
 delete---delete existing file
 
 
+file: collection of bytes.
+file:stream  of data.
+
+1) textual data : .txt,.doc etc  ----> FileStream + StreamReader     & StreamWriter
+									(path,access rights)  (reads from file)     (writes to the file)	
+
+2) binary data: .dat, .bin
+FileStream + BinaryReader     & BinaryWriter
+
+3) xml : .xml
+FileStream + XMLReader     & XMLWriter
 
 
-
+4) json: .json
 
 
 
