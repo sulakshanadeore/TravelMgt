@@ -1,0 +1,37 @@
+﻿Exceptions:
+
+Exceptions :
+System                         Application
+Built in      vs               FromLocNotFoundException <------ courier system
+Format
+int--string:
+compiler --->
+format of data is incorrect
+
+-----------------------------------------
+
+Base Class(Parent Class): Exception
+FormatException:Exception
+OverflowException
+---------------------------
+
+In .net we have structured exception handling:
+there are words specifically to be used(Keywords)
+
+try--catch---finally: used for gracefully exiting the application.
+
+try---all code that may fire/throw a exception. only one try block is valid.
+catch---write specific catch block for the exceptions, but all specific exceptions are not known,
+a general exception catch should be written at the end of the catch block, multiple catch blocks are
+ allowed.
+finally---which is executed whether a exception occurs or exception doesn't occurs.
+in the finally block all the resources used for the code are released,connections closed, files closed.
+
+
+
+
+
+
+
+
+
