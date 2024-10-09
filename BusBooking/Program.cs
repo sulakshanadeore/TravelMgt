@@ -5,6 +5,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+
+        Location l=new Location();
+        l.LocationID = 11;
+        l.LocationName = "sfs";
+        l.Address = "Pune";
+
+
+        Location l2 = new Location {LocationID=1,LocationName="Edens Garden,1st floor",Address="Mumbai" };
+        Console.WriteLine(l2.LocationID);
+        Console.WriteLine(l2.LocationName);
+        Console.WriteLine(l2.Address);
+
         Console.WriteLine("Enter courier ID");
         Courier courier = new Courier();
         

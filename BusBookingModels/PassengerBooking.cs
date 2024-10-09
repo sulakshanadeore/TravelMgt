@@ -9,6 +9,7 @@ namespace BusBookingModels
 {
     public class PassengerBooking
     {
+        //Collection Initializer
         Location[] validLocations = new Location[4] 
         {
         new Location{LocationID=1,LocationName="Pune",Address="Pimpri" },

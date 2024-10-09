@@ -59,7 +59,14 @@ namespace BusBooking
                     FileStream fs1 = new FileStream("Logger.txt", FileMode.Open, FileAccess.Read);
                     StreamReader sr=new StreamReader(fs1);
                     Console.WriteLine(sr.ReadToEnd());
-                    
+                    //DirectoryInfo di=new DirectoryInfo()
+
+                    FileInfo fi = new FileInfo("Logger.txt");
+                    Console.WriteLine(fi.FullName);
+                    Console.WriteLine(fi.Length);
+                    Console.WriteLine(fi.CreationTime);
+                    Console.WriteLine(fi.CreationTimeUtc);
+
                     sr.Close();
                     fs1.Close ();
 
