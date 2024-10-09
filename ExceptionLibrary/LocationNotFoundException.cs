@@ -2,6 +2,7 @@
 {
 
 	//exception+ tabtwice
+
 	[Serializable]
 	public class LocationNotFoundException : Exception
 	{

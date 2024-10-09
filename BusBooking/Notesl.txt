@@ -26,6 +26,23 @@ a general exception catch should be written at the end of the catch block, multi
  allowed.
 finally---which is executed whether a exception occurs or exception doesn't occurs.
 in the finally block all the resources used for the code are released,connections closed, files closed.
+-----------------------------
+
+try always needs a catch/catches or a finally.
+
+Exceptions can be logged/recorded in files.
+
+-------------------------------------------
+File Handling:
+1) Recording Exceptions and Errors
+2) Creating a document for your app.
+3)Edit
+4) Delete
+
+create---new file
+edit---edit existing file
+delete---delete existing file
+
 
 
 

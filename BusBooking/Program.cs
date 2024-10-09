@@ -10,7 +10,6 @@ internal class Program
         try
         {
             courier.CourierID = Convert.ToInt32(Console.ReadLine());
-
             Console.WriteLine("Enter location of boarding");
             string loc = Console.ReadLine();
             PassengerBooking booking = new PassengerBooking();
@@ -19,6 +18,25 @@ internal class Program
             {
                 Console.WriteLine("Yes available");
             }
+            try
+            {
+
+                Location Passengerloc = new Location();
+                Console.WriteLine("Enter LocID");
+                Passengerloc.LocationID = Convert.ToInt32(Console.ReadLine());
+            }
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine("Inner Catch.... ");
+            //    Console.WriteLine(ex.Message);
+            //}
+            finally {
+                Console.WriteLine("Inner finally invoked.......");
+            }
+
+
+
             //else {
             //    Console.WriteLine("Not available");
             //}
@@ -36,6 +54,11 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine("Number is too long for our valid courier id");
+
+        }
+        finally {
+            Console.WriteLine("Process Completed.....");
+
 
         }
         Console.Read();
